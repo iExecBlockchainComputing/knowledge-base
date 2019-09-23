@@ -1,16 +1,20 @@
-# knowledge-base
+# iExec Knowledge Base
 
-This repository gather documentation to discover blockchain and ressources that can be used before and during a Blockchain Hackthon.
+This repository gathers documentation to discover blockchain and resources that can be used in preparation of and during a blockchain hackathon.
 
-## Blockchain Introduction
-### overview (easy)
-Video introduction en francais: 
+## Blockchain
+
+### Overview (easy)
+
+Video introduction by Science Etonnante (in French):
 
 https://www.youtube.com/watch?v=du34gPopY5Y
 
-### explore components (medium)
-This website and videos from anders allow to understand each component of a blockchain. You will be able to understand hash, blocks, blockchain, simulate the creation of blocks etc ...
+### Explore components (medium)
+
+This website and videos by Anders Brownworth allow to understand each component of a blockchain. You will learn what is a hash, blocks, blockchain, simulate the creation of blocks, etc.
+
 https://anders.com/blockchain/
 
-### smart contracts (expert)
+### Smart Contracts (expert)
 If you want to learn solidity, language to create smart contracts on blockchain https://cryptozombies.io/ is a good start.
