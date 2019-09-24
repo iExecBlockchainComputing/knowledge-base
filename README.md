@@ -16,7 +16,7 @@ This website and videos by Anders Brownworth allow to understand each component 
 
 https://anders.com/blockchain/
 
-### Smart Contracts (expert)
+### Smart Contracts (developer)
 
 Deploy your first smart contract on goerli testnet and deploy on IPFS a react front-end to interact with it.
 - You can read slides introduction [here](https://www.crypto-lyon.fr/cryptoschool/cryptoclass/decentralized-infrastructure.html) : Decentralized infrastructure – Site Dweb
