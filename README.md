@@ -8,17 +8,17 @@ This repository gathers documentation to discover blockchain and resources that 
 
 * [Video introduction by Science Etonnante (in French)](https://www.youtube.com/watch?v=du34gPopY5Y)
 
-## Wallets
+#### Wallets
 
 * [Metamask Official Website](https://metamask.io/)
 * [How to set up Metamask](https://www.youtube.com/watch?time_continue=14&v=ZIGUC9JAAw8)
 
-## Explorers
+#### Explorers
 
 * [Etherscan](https://etherscan.io/) (Ethereum explorer)
 * [TradeBlock](https://tradeblock.com/bitcoin/explorer) (Bitcoin explorer)
 
-## Faucets
+#### Faucets
 
 * [ETH Kovan faucet](https://gitter.im/kovan-testnet/faucet)
 * [RLC Kovan faucet](https://faucet.iex.ec/kovan)
@@ -39,7 +39,7 @@ If you want to learn solidity, language to create smart contracts on blockchain 
 
 ### Miscellaneous
 
-## Oracles
+#### Oracles
 
 * How to use an oracle ([iExec's Price Feed](https://price-feed-doracle.iex.ec/))
 * Create your own oracle ([iExec tutorial](https://medium.com/iex-ec/how-to-build-a-decentralized-oracle-on-ethereum-a-step-by-step-guide-d8c14719b69f))
