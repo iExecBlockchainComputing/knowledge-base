@@ -42,12 +42,12 @@ If you want to learn solidity, language to create smart contracts on blockchain 
 
 ### Miscellaneous
 
-From 12 words to private/public keys : https://iancoleman.io/bip39/
-Cours des cryptomoney : https://coinmarketcap.com/fr/
-Cours de l’ETH : https://coinmarketcap.com/fr/currencies/ethereum/
-DAppNode : https://dappnode.io/
-Qu’est ce que Ethereum ? https://www.ethereum.org/beginners/
-Vidéo Premier block (25/06/19) : Les apports de la blockchain pour son business - iExec https://www.youtube.com/watch?v=Qco2o6EhB0U
+* From 12 words to private/public keys : https://iancoleman.io/bip39/
+* Cours des cryptomoney : https://coinmarketcap.com/fr/
+* Cours de l’ETH : https://coinmarketcap.com/fr/currencies/ethereum/
+* DAppNode : https://dappnode.io/
+* Qu’est ce que Ethereum ? https://www.ethereum.org/beginners/
+* Vidéo Premier block (25/06/19) : Les apports de la blockchain pour son business - iExec https://www.youtube.com/watch?v=Qco2o6EhB0U
 
 
 #### Oracles
