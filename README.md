@@ -56,4 +56,4 @@ If you want to learn solidity, language to create smart contracts on blockchain 
 
 * How to use an oracle ([iExec's Price Feed](https://price-feed-doracle.iex.ec/))
 * Create your own oracle ([iExec tutorial](https://medium.com/iex-ec/how-to-build-a-decentralized-oracle-on-ethereum-a-step-by-step-guide-d8c14719b69f))
-* [What is 'DeFi'](https://medium.com/blockchain-manchester/erc-721-metadata-standards-and-ipfs-94b01fea2a89)? (Decentralized Finance)
+* [What is 'DeFi'](https://themoneymongers.com/decentralized-finance-defi/)
