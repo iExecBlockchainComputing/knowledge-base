@@ -50,8 +50,8 @@ If you want to learn solidity, language to create smart contracts on blockchain 
 
 ### Hackathon April meetups :
 * Block 1 (25/06/19) : Les apports de la blockchain pour son business - iExec https://www.youtube.com/watch?v=Qco2o6EhB0U
-* Block 2 (25/09/19): [slides](https://github.com/iExecBlockchainComputing/knowledge-base/blob/master/Bloc2-Demarrer%20avec%20la%20Blockchain%20-%20Blockathon%20April.pdf) introduction à la blokchain en partant de l'aspect "Protocole". inspiration venant de ce [bon documentaire de Rémi Crussière.](https://d.tube/#!/v/emir888/QmPKHQ16owmhvoDdg4k2NRL3KH6Ha2mvZWttV8DsfZCt7c) 
-
+* Block 2 (25/09/19): Démarrer avec la blockchain https://www.youtube.com/watch?v=UmhO2-qk_VQ [slides](https://github.com/iExecBlockchainComputing/knowledge-base/blob/master/Bloc2-Demarrer%20avec%20la%20Blockchain%20-%20Blockathon%20April.pdf) Introduction à la blokchain en partant de l'aspect "Protocole". inspiration venant de ce [bon documentaire de Rémi Crussière.](https://d.tube/#!/v/emir888/QmPKHQ16owmhvoDdg4k2NRL3KH6Ha2mvZWttV8DsfZCt7c) 
+* Block 2 (22/10/19):
 #### Oracles
 
 * How to use an oracle ([iExec's Price Feed](https://price-feed-doracle.iex.ec/))
