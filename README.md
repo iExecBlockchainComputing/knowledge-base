@@ -60,4 +60,10 @@ If you want to learn solidity, language to create smart contracts on blockchain 
 
 ### Pad
 
+### iExec SDK
+
+* [SDK cli documentation](https://github.com/iExecBlockchainComputing/iexec-sdk#iexec-sdk-cli-api)
+* [SDK js lib documentation](https://github.com/iExecBlockchainComputing/iexec-sdk#iexec-sdk-library-api)
+* [UI examples in codesandbox](https://github.com/iExecBlockchainComputing/iexec-sdk#test-iexec-in-codesandbox)
+
 https://mensuel.framapad.org/p/bloc3
