@@ -20,75 +20,86 @@ const rainInsuranceAddress = "0xA49658DaaeE0Fb7f42DA7D29E7DeD4fd25F27E47";
 const sleep = ms => new Promise(res => setTimeout(res, ms));
 
 (async () => {
-  const ethereum = window.ethereum;
-  await ethereum.enable();
+  try {
+    const ethereum = window.ethereum;
+    await ethereum.enable();
 
-  mainContainer.hidden = false;
-  loginHelper.hidden = true;
+    mainContainer.hidden = false;
+    loginHelper.hidden = true;
 
-  const web3provider = new providers.Web3Provider(ethereum);
-  const web3Signer = web3provider.getSigner();
+    const web3provider = new providers.Web3Provider(ethereum);
 
-  const rainInsuranceContract = new Contract(
-    rainInsuranceAddress,
-    rainInsuranceAbi,
-    web3Signer
-  );
+    const { chainId } = await web3provider.getNetwork();
+    if (chainId !== 42)
+      throw new Error("unsupported blockchain, please switch to kovan (42)");
 
-  const refreshMyWallet = async () => {
-    const address = await web3Signer.getAddress().catch(e => console.error(e));
-    userAddressOutput.innerText = `Vous êtes connecté avec le wallet ${address}`;
-    const balance = await web3provider
-      .getBalance(address)
-      .catch(e => console.error(e));
-    userBalanceOutput.innerText = `Il y'a ${utils.formatEther(
-      balance
-    )} Eth dans votre wallet`;
-  };
+    const web3Signer = web3provider.getSigner();
 
-  const refreshinsuranceBalance = async () => {
-    const compensation = await rainInsuranceContract
-      .compensation()
-      .catch(e => console.error(e));
-    const balance = await rainInsuranceContract
-      .viewBalance()
-      .catch(e => console.error(e));
-    insuranceBalanceOutput.innerText = `Il y'a ${utils.formatEther(
-      balance
-    )} Eth sur le contrat d'assurance, le montant de l'indemnité est de ${utils.formatEther(
-      compensation
-    )} Eth`;
-  };
+    const rainInsuranceContract = new Contract(
+      rainInsuranceAddress,
+      rainInsuranceAbi,
+      web3Signer
+    );
 
-  const refreshIsRainy = async () => {
-    const isRainy = await rainInsuranceContract
-      .isRainy()
-      .catch(e => console.error(e));
-    weatherOutput.innerText = isRainy
-      ? `Aujourd'hui il pleut`
-      : `Aujourd'hui il ne pleut pas`;
-  };
+    const refreshMyWallet = async () => {
+      const address = await web3Signer
+        .getAddress()
+        .catch(e => console.error(e));
+      userAddressOutput.innerText = `Vous êtes connecté avec le wallet ${address}`;
+      const balance = await web3provider
+        .getBalance(address)
+        .catch(e => console.error(e));
+      userBalanceOutput.innerText = `Il y'a ${utils.formatEther(
+        balance
+      )} Eth dans votre wallet`;
+    };
 
-  const refreshAll = () => {
-    refreshIsRainy();
-    refreshinsuranceBalance();
-    refreshMyWallet();
-  };
+    const refreshinsuranceBalance = async () => {
+      const compensation = await rainInsuranceContract
+        .compensation()
+        .catch(e => console.error(e));
+      const balance = await rainInsuranceContract
+        .viewBalance()
+        .catch(e => console.error(e));
+      insuranceBalanceOutput.innerText = `Il y'a ${utils.formatEther(
+        balance
+      )} Eth sur le contrat d'assurance, le montant de l'indemnité est de ${utils.formatEther(
+        compensation
+      )} Eth`;
+    };
 
-  const getRainCompensation = async () => {
-    try {
-      getCompensationError.innerText = "";
-      const tx = await rainInsuranceContract.getRainyCompensation();
-      await tx.wait();
-      await sleep(5000);
-      refreshAll();
-    } catch (e) {
-      getCompensationError.innerText = e.message;
-    }
-  };
+    const refreshIsRainy = async () => {
+      const isRainy = await rainInsuranceContract
+        .isRainy()
+        .catch(e => console.error(e));
+      weatherOutput.innerText = isRainy
+        ? `Aujourd'hui il pleut :(`
+        : `Aujourd'hui il ne pleut pas :)`;
+    };
 
-  refreshButton.addEventListener("click", refreshAll);
-  getCompensationButton.addEventListener("click", getRainCompensation);
+    const refreshAll = () => {
+      refreshIsRainy();
+      refreshinsuranceBalance();
+      refreshMyWallet();
+    };
 
-  refreshAll();
+    const getRainCompensation = async () => {
+      try {
+        getCompensationError.innerText = "";
+        const tx = await rainInsuranceContract.getRainyCompensation();
+        await tx.wait();
+        await sleep(5000);
+        refreshAll();
+      } catch (e) {
+        getCompensationError.innerText = e.message;
+      }
+    };
+
+    refreshButton.addEventListener("click", refreshAll);
+    getCompensationButton.addEventListener("click", getRainCompensation);
+
+    refreshAll();
+  } catch (e) {
+    console.error(e.message);
+  }
 })();
