@@ -20,7 +20,8 @@ This repository gathers documentation to discover blockchain and resources that 
 
 #### Faucets
 
-* [ETH Kovan faucet](https://gitter.im/kovan-testnet/faucet)
+* [ETH Kovan faucet](https://faucet.kovan.network/)
+* [ETH Kovan faucet (gitter)](https://gitter.im/kovan-testnet/faucet)
 * [RLC Kovan faucet](https://faucet.iex.ec/kovan)
 
 ### Explore components (medium)
