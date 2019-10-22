@@ -13,8 +13,11 @@ import {
   getCompensationButton,
   getCompensationError
 } from "./domElements";
+import { setTimeout } from "timers";
 
 const rainInsuranceAddress = "0xA49658DaaeE0Fb7f42DA7D29E7DeD4fd25F27E47";
+
+const sleep = ms => new Promise(res => setTimeout(res, ms));
 
 (async () => {
   const ethereum = window.ethereum;
@@ -44,12 +47,17 @@ const rainInsuranceAddress = "0xA49658DaaeE0Fb7f42DA7D29E7DeD4fd25F27E47";
   };
 
   const refreshinsuranceBalance = async () => {
+    const compensation = await rainInsuranceContract
+      .compensation()
+      .catch(e => console.error(e));
     const balance = await rainInsuranceContract
       .viewBalance()
       .catch(e => console.error(e));
     insuranceBalanceOutput.innerText = `Il y'a ${utils.formatEther(
       balance
-    )} Eth sur le contrat d'assurance`;
+    )} Eth sur le contrat d'assurance, le montant de l'indemnité est de ${utils.formatEther(
+      compensation
+    )} Eth`;
   };
 
   const refreshIsRainy = async () => {
@@ -70,7 +78,9 @@ const rainInsuranceAddress = "0xA49658DaaeE0Fb7f42DA7D29E7DeD4fd25F27E47";
   const getRainCompensation = async () => {
     try {
       getCompensationError.innerText = "";
-      await rainInsuranceContract.getRainyCompensation();
+      const tx = await rainInsuranceContract.getRainyCompensation();
+      await tx.wait();
+      await sleep(5000);
       refreshAll();
     } catch (e) {
       getCompensationError.innerText = e.message;
