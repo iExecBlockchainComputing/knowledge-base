@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assurance pluie</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>
+        Assurance pluie
+      </h1>
+      <div class="spacer" />
+      <div id="login-helper">
+        Veuillez vous identifier avec votre wallet Metamask
+      </div>
+      <div id="content" hidden>
+        <div class="row" id="user-address"></div>
+        <div class="row" id="user-balance"></div>
+        <div class="row" id="insurance-balance"></div>
+        <div class="row" id="weather"></div>
+        <div class="row">
+          <button id="refresh">
+            Mettre à jour les données
+          </button>
+        </div>
+        <div class="spacer" />
+        <div class="row">
+          <button id="get-compensation">
+            Demander un remboursement
+          </button>
+        </div>
+        <div id="get-compensation-error"></div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
