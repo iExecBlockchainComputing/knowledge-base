@@ -13,9 +13,8 @@ import {
   getCompensationButton,
   getCompensationError
 } from "./domElements";
-import { setTimeout } from "timers";
 
-const rainInsuranceAddress = "0xA49658DaaeE0Fb7f42DA7D29E7DeD4fd25F27E47";
+const rainInsuranceAddress = "0x8e6964a8d62CDE726bD7533c772522C804c53E15";
 
 const sleep = ms => new Promise(res => setTimeout(res, ms));
 
