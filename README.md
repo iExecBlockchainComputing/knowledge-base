@@ -1,24 +1,24 @@
 # iExec Knowledge Base
 
-This repository gathers documentation to discover blockchain and resources that can be used in preparation of and during a blockchain hackathon.
+This repository gathers documentation and resources on blockchains and off-chain compute. It can be used in preparation of and during hackathons.
 
 ## Blockchain
 
 ### Overview (easy)
 
-* [Video introduction by Science Etonnante (in French)](https://www.youtube.com/watch?v=du34gPopY5Y)
+* [Video introduction by Science Etonnante [French]](https://www.youtube.com/watch?v=du34gPopY5Y)
 
-#### Wallets
+### Wallets
 
 * [Metamask Official Website](https://metamask.io/)
 * [How to set up Metamask](https://www.youtube.com/watch?time_continue=14&v=ZIGUC9JAAw8)
 
-#### Explorers
+### Explorers
 
 * [Etherscan](https://etherscan.io/) (Ethereum explorer)
 * [TradeBlock](https://tradeblock.com/bitcoin/explorer) (Bitcoin explorer)
 
-## Faucets
+### Faucets
 
 To interact with the blockchain, by calling a contract, or create your smart contract, you will need ether.
 For testing purpose, you can ask in the following link to get few.
@@ -28,7 +28,7 @@ Give your public address and you'll receive 1 ethers, enough to start.
 * [ETH Kovan faucet (gitter)](https://gitter.im/kovan-testnet/faucet)
 * [RLC Kovan faucet](https://faucet.iex.ec/kovan)
 
-## Block 2: Explore components (intermediate)
+### Explore components (intermediate)
 
 * [This website and videos](https://anders.com/blockchain/) by Anders Brownworth allow to understand each component of a blockchain. You will learn what is a hash, blocks, blockchain, simulate the creation of blocks, etc.
 
@@ -50,16 +50,16 @@ If you want to learn solidity, language to create smart contracts on blockchain 
 * DAppNode : https://dappnode.io/
 * What is a Blockchain ? https://www.ethereum.org/beginners/
 
-### Hackathon April meetups : [French]
-* Block 1 (25/06/19) : Les apports de la blockchain pour son business - iExec https://www.youtube.com/watch?v=Qco2o6EhB0U
-* Block 2 (25/09/19): Démarrer avec la blockchain https://www.youtube.com/watch?v=UmhO2-qk_VQ [slides](https://github.com/iExecBlockchainComputing/knowledge-base/blob/master/Bloc2-Demarrer%20avec%20la%20Blockchain%20-%20Blockathon%20April.pdf) Introduction à la blokchain en partant de l'aspect "Protocole". inspiration venant de ce [bon documentaire de Rémi Crussière.](https://d.tube/#!/v/emir888/QmPKHQ16owmhvoDdg4k2NRL3KH6Ha2mvZWttV8DsfZCt7c)
-* Block 3 (22/10/19):
+## Hackathon April meetups : [French]
+* Block #1 (June 19) [French]: [Les apports de la blockchain](https://www.youtube.com/watch?v=Qco2o6EhB0U)
+* Block #2 (25/09/19): Démarrer avec la blockchain https://www.youtube.com/watch?v=UmhO2-qk_VQ [slides](https://github.com/iExecBlockchainComputing/knowledge-base/blob/master/Bloc2-Demarrer%20avec%20la%20Blockchain%20-%20Blockathon%20April.pdf) Introduction à la blokchain en partant de l'aspect "Protocole". inspiration venant de ce [bon documentaire de Rémi Crussière.](https://d.tube/#!/v/emir888/QmPKHQ16owmhvoDdg4k2NRL3KH6Ha2mvZWttV8DsfZCt7c)
+* Block 3 (22/10/19): 
 
-
-## Block 3: What can I hack with iExec?
+## What can I hack with iExec?
 
 iExec leverages cutting-edge technologies in blockchain, distributed computing and Trust Execution Environments (TEE, intel SGX).
-The iExec is well-suited to create solve problem
+
+The iExec is well-suited for:
 
 ### Confidential Computing
 
@@ -72,7 +72,7 @@ It is possible to run an application A, using a dataset D, that produces a resul
  - Dataset D should only be used by application A, reviewed and allowed by owner of D, whitelisting system.
  - The requester/end user is the only stakeholder able to decrypt the result. 
 
-#### Monetize your computing resources as a digital assets.
+### Monetize your computing resources as a digital assets.
 
 * Control and share your data processing without data leaks.
 
@@ -86,9 +86,8 @@ It is possible to run an application A, using a dataset D, that produces a resul
  - Application A is publicly attested by all stackholders.
  - Dataset D should never be revealed. (optional)
  - The generation of the Result R is verifiable on-chain.
- 
 
-#### Oracles: Connect data from real world to the blockchain
+### Oracles: connect data from real world to the blockchain
 
 Smart Contract lives in a siloed and highly secure environments and have a very limited access to the real world.
 Allowing developers to connect     
@@ -97,10 +96,9 @@ Allowing developers to connect
 * Create your own oracle ([iExec tutorial](https://medium.com/iex-ec/how-to-build-a-decentralized-oracle-on-ethereum-a-step-by-step-guide-d8c14719b69f))
 * [What is 'DeFi'](https://themoneymongers.com/decentralized-finance-defi/)
 
-
 ### Collaborative computing
 
-* In a consortium environment, the combination of data allows to explore and extract new insight from data  owned by multiple stakeholders, preserving the data privacy.     
+* In a consortium environment, the combination of data allows to explore and extract new insight from data owned by multiple stakeholders, preserving the data privacy.     
 
  It is possible to proof that an application A, using a dataset D1 and D2, produces the result R.
  - Application A is publicly attested by all stakeholders.
@@ -110,20 +108,16 @@ Allowing developers to connect
 For security reasons (smart contract security audit), the multiple datasets handling feature will not be supported before release v4.x. 
 The usage of multiple inputs files must be used with the current version, this is workaround to build proof of concepts.     
 
-
 ### Off-Chain Compute
 
 * Extend some feature of the blockchain to your computing resources: monitoring, access control
 * Ease the deployment of application. 
 
-
-### decentralized marketplace for computing resources
+### Decentralized marketplace for computing resources
 
 * Create decentralized, autonomous and unstoppable application application censorship resistant applications
 you don't share your data, you allow someone to buy for the processing of your assets
 
-
 ### Pad
 
 https://mensuel.framapad.org/p/bloc3
-
