@@ -115,7 +115,7 @@ The usage of multiple input files is a valid workaround to build proof of concep
 ### Off-Chain Compute
 
 * Extend some features of the blockchain to your computing resources: monitoring, access controls
-* Ease the deployment of applications. 
+* Ease the deployment of applications.
 
 ### Decentralized marketplace for computing resources
 
