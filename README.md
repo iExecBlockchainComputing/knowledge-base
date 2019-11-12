@@ -51,7 +51,7 @@ https://cryptozombies.io/
 ### Hackathon April meetups: [French]
 * Block 1 (25/06/19): Les apports de la blockchain pour son business - iExec https://www.youtube.com/watch?v=Qco2o6EhB0U
 * Block 2 (25/09/19): Démarrer avec la blockchain https://www.youtube.com/watch?v=UmhO2-qk_VQ [slides](https://github.com/iExecBlockchainComputing/knowledge-base/blob/master/Bloc2-Demarrer%20avec%20la%20Blockchain%20-%20Blockathon%20April.pdf) Introduction à la blokchain en partant de l'aspect "Protocole". L’inspiration venant de ce [bon documentaire de Rémi Crussière.](https://d.tube/#!/v/emir888/QmPKHQ16owmhvoDdg4k2NRL3KH6Ha2mvZWttV8DsfZCt7c)
-* Block 3 (22/10/19): Pad for block 3  https://mensuel.framapad.org/p/bloc3
+* Block 3 (22/10/19): Pad for block 3  https://mensuel.framapad.org/p/bloc3. Sildes: https://docs.google.com/presentation/d/1o_QJixt3KMvlCzz8F7syh3olDC6Bu1J-MHwlpiH52Bo
 
 
 ## Block 3: Hack with iExec
