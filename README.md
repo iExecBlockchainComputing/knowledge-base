@@ -1,3 +1,5 @@
+**This repository is deprecated and is no longer maintained.**
+
 # iExec Knowledge Base
 
 This repository gathers documentation to discover blockchain and resources that can be used in preparation of and during a blockchain hackathon.
